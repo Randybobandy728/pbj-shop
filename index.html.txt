@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PB&J Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the PB&J Shop!</h1>
+        <p>Customize your perfect peanut butter & jelly sandwich.</p>
+        
+        <form id="orderForm">
+            <label>Do you want your bread toasted?</label>
+            <select id="toasted">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>Choose your peanut butter:</label>
+            <select id="peanutButter">
+                <option value="Crunchy">Crunchy</option>
+                <option value="Smooth">Smooth</option>
+            </select>
+
+            <label>Choose your jelly:</label>
+            <select id="jelly">
+                <option value="Strawberry">Strawberry</option>
+                <option value="Grape">Grape</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <div id="orderSummary"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
