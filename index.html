@@ -54,6 +54,34 @@
       
       <button type="submit">Place Order</button>
     </form>
+  <div id="pbj-tracker">
+      <p>PB&Js Sold: <span id="sold-count">0</span> / 10</p>
+    </div>
   </div>
+  <script>
+    let soldCount = localStorage.getItem("soldCount") ? parseInt(localStorage.getItem("soldCount")) : 0;
+    document.getElementById("sold-count").textContent = soldCount;
+
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (soldCount < 10) {
+        soldCount++;
+        document.getElementById("sold-count").textContent = soldCount;
+        localStorage.setItem("soldCount", soldCount);
+        alert("Order placed! " + soldCount + " out of 10 PB&Js sold today.");
+      } else {
+        alert("Sorry, we're sold out for today!");
+      }
+    });
+
+    function resetSoldCount() {
+      const now = new Date();
+      if (now.getHours() === 0 && now.getMinutes() === 0) {
+        localStorage.setItem("soldCount", 0);
+        document.getElementById("sold-count").textContent = 0;
+      }
+    }
+    setInterval(resetSoldCount, 60000); // Check every minute
+  </script>
 </body>
 </html>
