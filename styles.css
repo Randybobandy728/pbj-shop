@@ -14,6 +14,9 @@ body {
   padding: 20px;
   border: 10px solid;
   border-image: linear-gradient(to right, #800080, #d2a679) 1;
+  background-image: url('/mnt/data/PB&J.jpg');
+  background-repeat: repeat;
+  background-size: 100px 100px;
 }
 
 .container {
@@ -99,4 +102,3 @@ button:hover {
   border-radius: 5px;
   color: #333;
 }
-
