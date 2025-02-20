@@ -8,14 +8,14 @@
 
 body {
   font-family: 'Helvetica', sans-serif;
-  background: linear-gradient(135deg, #800080, #d2a679);
+  background: linear-gradient(135deg, #804000, #d2a679);
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
   border: 15px solid;
-  border-image: linear-gradient(to right, #800080, #d2a679) 1;
+  border-image: linear-gradient(to right, #804000, #d2a679) 1;
   background-image: url(https://raw.githubusercontent.com/Randybobandy728/pbj-shop/refs/heads/main/PB%26J.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -77,7 +77,7 @@ select {
   width: 100%;
   height: 40px;
   padding: 0.75rem;
-  border: 1px solid #800080;
+  border: 1px solid #804000;
   border-radius: 5px;
   font-size: 1rem;
   background-color: #f3e5ab;
@@ -85,7 +85,7 @@ select {
 
 button {
   padding: 0.75rem;
-  background-color: #800080;
+  background-color: #804000;
   color: #fff;
   border: none;
   border-radius: 5px;
