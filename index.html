@@ -61,6 +61,7 @@
 
       <input type="hidden" name="_subject" value="New PB&J Order!">
       <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
       
       <button type="submit">Place Order</button>
     </form>
@@ -72,18 +73,6 @@
   <script>
     let soldCount = localStorage.getItem("soldCount") ? parseInt(localStorage.getItem("soldCount")) : 0;
     document.getElementById("sold-count").textContent = soldCount;
-
-    document.querySelector("form").addEventListener("submit", function(event) {
-      event.preventDefault();
-      if (soldCount < 10) {
-        soldCount++;
-        document.getElementById("sold-count").textContent = soldCount;
-        localStorage.setItem("soldCount", soldCount);
-        alert("Order placed! " + soldCount + " out of 10 PB&Js sold today.");
-      } else {
-        alert("Sorry, we're sold out for today!");
-      }
-    });
 
     function resetSoldCount() {
       const now = new Date();
