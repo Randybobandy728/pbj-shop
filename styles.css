@@ -43,7 +43,7 @@ h2 {
   margin-bottom: 1rem;
   color: #5d3a00;
   font-size: 1.5rem;
-  border: 2px solid ##804000;
+  border: 2px solid #804000;
   padding: 10px;
   border-radius: 10px;
   background-color: rgba(255, 222, 173, 0.85);
@@ -101,7 +101,7 @@ button:hover {
 #orderSummary {
   margin-top: 2rem;
   padding: 1rem;
-  background-color: ##804000;
+  background-color: #804000;
   border: 1px solid #4b0082;
   border-radius: 5px;
   color: #4b0082;
