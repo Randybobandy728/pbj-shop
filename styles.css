@@ -16,9 +16,10 @@ body {
   padding: 20px;
   border: 15px solid;
   border-image: linear-gradient(to right, #800080, #d2a679) 1;
-  background-image: url('/mnt/data/PB&J.jpg');
-  background-repeat: repeat;
-  background-size: cover;
+  background-image: url('https://raw.githubusercontent.com/randybobandy728/pbj-shop/main/PB&J.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 .container {
